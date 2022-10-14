@@ -1,0 +1,139 @@
+.skills-container {
+  padding: 5px 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  
+  h1 {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+    font-weight: 1000;
+    font-size: 40px;
+    border-bottom: 5px solid rgba(105, 105, 105, 0.583);
+    border-radius: 20%;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    color:rgba(59, 0, 177, 0.526);
+  
+    img {
+      width: 40px;
+      border-radius: 50%;
+      padding: 5px;
+      background-color: white;
+    }
+  }
+
+  .active-skills {
+    width: 72.1%;
+    display: flex;
+    justify-content: center;
+    gap: 20px 10px;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    border: 3px solid white;
+
+    legend {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 1000;
+      color: whitesmoke;
+      text-shadow: 0 0 2px black; 
+    }
+
+    img {
+      height: 80px;
+    }
+  }
+
+  .featured-skills {
+    width: 15%;
+    height: 360px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px 10px;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    border: 3px solid white;
+
+    legend {
+      position: absolute;
+      text-align: right;
+      bottom: -57px;
+      font-size: 26px;
+      font-weight: 1000;
+      color: whitesmoke;
+      text-shadow: 0 0 2px black; 
+      text-align: center;
+    }
+  } 
+
+  .skill-item {
+    width: 105px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+
+    img {
+      width: 80px;
+      
+    }
+
+    h3 {
+      font-weight: 1000;
+      box-shadow: 0 0 3px rgba(243, 166, 0, 0.801);
+      border-radius: 10px;
+      padding: 0 4px;
+      color: rgba(243, 166, 0, 0.801);
+      margin: 10px 0 0;
+    }
+
+    .cont {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h4 {
+        text-align: center;
+        width: 50%;
+        font-weight: 1000;
+        color:rgba(59, 0, 177, 0.526);
+        background-color: rgba(229, 224, 224, 0.344);
+        border-radius: 20px;
+        padding: 0 10px;
+        margin: 10px 0 0;
+      }
+  
+      .level {
+        width: 90%;
+        position: relative;
+        margin: 5px auto;
+        border-radius: 20px;
+        height: 10px;
+        box-shadow: 0 0 5px rgba(6, 230, 255, 0.608);
+
+        .progress {
+          position: relative;
+          height: 100%;
+          left: 0;
+          background-color: rgba(6, 230, 255, 0.608);
+          border-radius: 20px;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+        }
+      }
+    }
+
+    
+    
+  }
+}
+

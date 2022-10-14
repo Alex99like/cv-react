@@ -1,0 +1,268 @@
+.experience-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+
+  h1 {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+    font-weight: 1000;
+    font-size: 40px;
+    border-bottom: 5px solid rgba(105, 105, 105, 0.583);
+    border-radius: 20%;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    color:rgba(59, 0, 177, 0.526);
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .first-line {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+
+    .process {
+      bottom: -27px;
+      position: relative;
+      right: -0px;
+      font-size: 8px;
+      padding: 2px 5px;
+      background-color: white;
+      transform: rotate(-2deg);
+      font-weight: 900;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(105, 105, 105, 0.607);
+      z-index: 10;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: white;
+        box-shadow: 0 0 3px black;
+        border-radius: 50%;
+        left: -10px;
+        bottom: -12px;
+        z-index: 5;
+      }
+    }
+  }
+
+  .two-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+
+    .process {
+      top: -42px;
+      position: relative;
+      right: 30px;
+      font-size: 8px;
+      padding: 2px 5px;
+      background-color: orange;
+      transform: rotate(2deg);
+      color: white;
+      text-shadow: 0 0 2px black;
+      font-weight: 900;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(105, 105, 105, 0.607);
+      z-index: 10;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border: 3px solid orange;
+        background-color: white;
+        box-shadow: 0 0 3px black;
+        border-radius: 50%;
+        left: -10px;
+        bottom: 12px;
+        z-index: 5;
+      }
+    }
+  }
+
+  .middle-line {
+    height: 4px;
+    width: 62%;
+    display: block;
+    margin: 20px auto 10px;
+    background-color: orange;
+    border-radius: 5px;
+  }
+
+  .experience-item {
+    width: 190px;
+    position: relative;
+    padding: 0 5px 5px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(105, 105, 105, 0.645);
+    background: white;
+
+    legend {
+      text-align: center;
+      font-weight: 900;
+      border: 3px solid orange;
+      border-radius: 9px;
+      background-color: white;
+      color: orange;
+      margin: 0;
+    }
+
+    .process {
+      position: absolute;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 900;
+      color: blueviolet;
+    }
+
+    p {
+      margin: 0;
+      text-align: center;
+      font-size: 12px;
+      color: dimgrey;
+      font-weight: 800;
+
+    }
+
+    ul {
+      margin: 0;
+      position: relative;
+      left: -17px;
+      width: 100%;
+      font-size: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      list-style-type: none;
+      
+      .item {
+        width: 40px;
+        position: relative;
+        font-weight: 900;
+        color: white;
+        text-shadow: 0 0 1px black;
+        border-radius: 10px;
+        padding-left: 20px;
+        background-color: aliceblue;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 3px;
+          top: 3px;
+          width: 10px;
+          height: 10px;
+          background-color: white;
+          border-radius: 50%;
+          box-shadow: 0 0 2px black;
+        }
+
+        &.HTML { background-color: orange; }
+        &.CSS { background-color: rgb(5, 111, 242); }
+        &.SCSS { background-color: darkorchid; }
+        &.TS { background-color: darkblue; }
+        &.JS { background-color: yellow; }
+        &.React { background-color: rgb(0, 251, 243); }
+
+        &.Express {
+          width: 55px;
+          background-color: rgb(255, 230, 1);
+        }
+
+        &.Nest {
+          background-color: crimson;
+        }
+
+        &.Next {
+          background-color: dimgray;
+        }
+
+        &.Native {
+          width: 80px;
+          background-color: rgb(5, 83, 252);
+        }
+
+        &.Mongodb {
+          width: 60px;
+          background-color: rgb(10, 228, 10);
+        }
+      }
+    }
+
+    .difficult {
+      margin: 0;
+      width: 100%;
+      max-width: 130px;
+      font-size: 10px;
+      display: flex;
+      height: 20px;
+      margin-top: 5px;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      color: white;
+      font-size: 8px;
+      text-shadow: 0 0 2px black;
+      border-radius: 20px;
+
+      &.easy {
+        background-color: rgba(6, 252, 6, 0.564);
+
+        .active {
+          background-color: green;
+        }
+      }
+
+      &.middle {
+        background-color: rgba(253, 194, 0, 0.859);
+
+        .active {
+          background-color: orange;
+        }
+      }
+
+      &.height {
+        background-color: rgba(243, 7, 15, 0.759);
+
+        .active {
+          background-color: crimson;
+        }
+      }
+
+      .container {
+        display: flex;
+        gap: 4px;
+
+        span {
+          height: 10px;
+          width: 10px;
+          border-radius: 50%;
+          box-shadow: 0 0 2px rgba(105, 105, 105, 0.388);
+          background-color: white;
+        }
+      }
+    }
+  }
+}
